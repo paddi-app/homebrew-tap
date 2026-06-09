@@ -11,7 +11,7 @@ class Paddi < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/paddi-app/cli/releases/download/v0.1.0/paddi_0.1.0_darwin_amd64.tar.gz"
-      sha256 "c1478c0e1fea8a8a576042c32341a7a2856ae39c9a9d9288cd8426b73676b553"
+      sha256 "618d954099a9950c4c3253f4b9ec4fb3cfe0d131b08a7abcc4a5c3012a5dbe54"
 
       define_method(:install) do
         bin.install "paddi"
@@ -19,7 +19,7 @@ class Paddi < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/paddi-app/cli/releases/download/v0.1.0/paddi_0.1.0_darwin_arm64.tar.gz"
-      sha256 "71a64c4653b6a0dfc6092473cd56a06ca2ef729e766ce9778baef07c00f480c9"
+      sha256 "6076e27bc15178e69047f749b22486c1f5bf0d58701ed14a8a8b5c264b4f9f48"
 
       define_method(:install) do
         bin.install "paddi"
@@ -30,14 +30,14 @@ class Paddi < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/paddi-app/cli/releases/download/v0.1.0/paddi_0.1.0_linux_amd64.tar.gz"
-      sha256 "eb97409b89f2e59d49c55a9b0203f5e76b94ef76d46d35aed9405442ba3292ac"
+      sha256 "f00795b5017e125e9d190ebc9cceab5821ec647bc1adbb33b02611a00eee2560"
       define_method(:install) do
         bin.install "paddi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/paddi-app/cli/releases/download/v0.1.0/paddi_0.1.0_linux_arm64.tar.gz"
-      sha256 "f7cded1fceea04287e36a99d9e674b3d8b9f4465740ec4476307e8b424cc89e1"
+      sha256 "96035e0cdd4b9e7b43ddd1773c2c51174dcf79bb8af4facf9c32a5fde22dfb76"
       define_method(:install) do
         bin.install "paddi"
       end
