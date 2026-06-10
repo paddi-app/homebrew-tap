@@ -5,21 +5,21 @@
 class Paddi < Formula
   desc "Paddi from the command line"
   homepage "https://github.com/paddi-app/paddi"
-  version "0.2.1"
+  version "0.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/paddi-app/paddi/releases/download/v0.2.1/paddi_0.2.1_darwin_amd64.tar.gz"
-      sha256 "629bf84b572b1f56b6c8bf6ab22ea6bfb8c5fd7bd7bd550a898ffbe9e635e528"
+      url "https://github.com/paddi-app/paddi/releases/download/v0.2.2/paddi_0.2.2_darwin_amd64.tar.gz"
+      sha256 "bfa3136a243a455198900be29438baa82c1779ef967997cbac95481ca7636a7c"
 
       define_method(:install) do
         bin.install "paddi"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/paddi-app/paddi/releases/download/v0.2.1/paddi_0.2.1_darwin_arm64.tar.gz"
-      sha256 "f092bde9261d3b1e0302eae0572e340592cef7007ab98d95236b3333d886de65"
+      url "https://github.com/paddi-app/paddi/releases/download/v0.2.2/paddi_0.2.2_darwin_arm64.tar.gz"
+      sha256 "5fe9284fd42489126e2ff0318ebe67395402300d2d1a8295c254bab78829cfc0"
 
       define_method(:install) do
         bin.install "paddi"
@@ -29,15 +29,15 @@ class Paddi < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/paddi-app/paddi/releases/download/v0.2.1/paddi_0.2.1_linux_amd64.tar.gz"
-      sha256 "ab1fce3c85d27428726621c367d8b1e85211864a7c6e7157e34fa318756531ed"
+      url "https://github.com/paddi-app/paddi/releases/download/v0.2.2/paddi_0.2.2_linux_amd64.tar.gz"
+      sha256 "b2ec9caa8d77ad5386d7b882798ed846fd22b1bf718eebce73e267ec4fa63b50"
       define_method(:install) do
         bin.install "paddi"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/paddi-app/paddi/releases/download/v0.2.1/paddi_0.2.1_linux_arm64.tar.gz"
-      sha256 "73fb52a5f026b87b1b650d971a34b1734be4fa15a32749871257ce649511acd7"
+      url "https://github.com/paddi-app/paddi/releases/download/v0.2.2/paddi_0.2.2_linux_arm64.tar.gz"
+      sha256 "ca5337fde14964cf4ebae20c108975c1d1bde7b42c614445b57fb8e03c9c3fab"
       define_method(:install) do
         bin.install "paddi"
       end
